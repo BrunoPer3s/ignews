@@ -1,0 +1,14 @@
+.button {
+  padding: 1.25rem 4rem;
+  background: #EBA417;
+  border-radius: 100px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #121214;
+  transition: filter 0.3s ease;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

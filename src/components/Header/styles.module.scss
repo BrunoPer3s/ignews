@@ -1,0 +1,59 @@
+.Container {
+  border-bottom: 1px solid var(--gray-800);
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 70rem;
+  margin: 0 auto;
+  padding:  0 0.5rem;
+
+  > div {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    
+    div {
+      display: flex;
+      margin-left: 5.17rem;
+      height: 6rem;
+      line-height: 6rem;
+
+      a {
+        position: relative;
+        color: var(--gray-300);
+        transition: color 0.3s ease;
+        padding: 0 0.5rem;
+        
+        & + a {
+          margin-left: 1.5rem;
+        }
+
+        &:hover {
+          color: var(--white);
+        }
+
+        &.active {
+          color: var(--white);
+          font-weight: bold;
+
+        }
+
+        &.active::after {
+          content: '';
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: #EBA417;
+          border-radius: 10px 10px 0px 0px;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+}

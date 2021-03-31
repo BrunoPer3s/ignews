@@ -1,0 +1,24 @@
+.Container {
+  button {
+    display: flex;
+    align-items: center;
+    background: #1F2729;
+    border-radius: 100px;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    color: var(--gray-100);
+    transition: 0.3s ease;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    p {
+      margin-left: 1rem;
+    }
+
+    svg:last-child {
+      margin-left: 1rem;
+    }
+  }
+}
